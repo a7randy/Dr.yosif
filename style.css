@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Katibeh&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    height: 100vh;
+    background-image: url(background.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  padding: 0 20px; /* Adjust padding */
+  backdrop-filter: blur(10px);
+}
+#yosa{
+    color: rgb(78, 129, 171);
+    font-weight: 700;
+}
+
+#ul{
+   display: flex; 
+   align-items: center;
+   justify-content: space-between;
+
+}
+.li {
+  list-style: none;
+  text-decoration: none;
+  margin-right: 8px; /* Adjust margin */
+  color: rgb(78, 129, 171);
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+.a{
+    text-decoration: none;
+    color:rgb(78, 129, 171);
+    cursor: pointer;
+}
+.a:hover{
+    color: rgb(121, 161, 195);
+}
+.a:last-child{
+    margin: 0;
+}
+.xosh{
+    height:140px;
+    display: flex;
+    flex-direction: column;
+    align-items:end;
+    margin-top: 50px;
+   margin-right: 35px;
+}
+.xosh h4{
+    font-size: 50px;
+    font-family: "Katibeh", serif;
+    font-weight: 400;
+    font-style: normal;
+      color: rgb(63, 112, 155);
+      
+}
+.xosh p{
+    font-size: 35px;
+    font-family: "Katibeh", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 9px;
+      color: rgb(63, 112, 155);
+      } 
+.card {
+    width: 400px;
+    height: 370px;
+    background: rgb(244, 247, 252);
+    border-radius: 0.4em;
+    box-shadow: 0.3em 0.3em 0.7em #00000015;
+    transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: rgb(244, 247, 252) 0.2em solid;
+    margin-top: 40px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+
+   }
+
+   
+   .card:hover {
+    border: rgb(76, 123, 164) 0.2em solid;
+   }
+   .card h3{
+    margin-top: 15px;
+    color: rgb(76, 123, 164);
+    font-size: 45px;
+    font-family: "Katibeh", serif;
+    font-weight: 400;
+   }
+   .card p{
+    text-align: center;
+   }
+   
+.btn {
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(76, 123, 164);
+    min-width: 200px;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    padding: 16px 20px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    overflow: hidden;
+    cursor: pointer;
+    margin-top: 40px;
+    font-family: "Katibeh", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+  }
+  
+  .btn:hover {
+    opacity: .95;
+  }
+  
+  .btn .animation {
+    border-radius: 100%;
+    animation: ripple 0.6s linear infinite;
+  }
+  
+  @keyframes ripple {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
+    }
+  
+    100% {
+      box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
+    }
+  }
+
+ #dwam{
+  height:500px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+   
+   
+ }
+
+#form{
+    height: 460px;
+    width:460px;
+    background-color: rgb(244, 247, 252);
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    border-radius: 0.4em;
+    transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-radius: 0.4em;
+    box-shadow: 0.3em 0.3em 0.7em #00000015;
+    border: rgb(76, 123, 164) 0.2em solid;
+     backdrop-filter: blur(10px);
+   }
+  #form h3{
+    font-family: "Katibeh", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    text-align: right;
+    color: rgb(76, 123, 164);
+  }
+  #named{
+    height: 25px;
+    width: 340px;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    border-color:rgb(76, 123, 164);
+    background-color: rgb(244, 247, 252);
+    margin-top: 40px;
+  }
+  #named::placeholder{
+    font-family: "Katibeh", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    text-align: right;
+    color: rgb(121, 158, 191);
+  }
+  #named:focus {
+    color:rgb(76, 123, 164) ;
+    font-family: "Katibeh", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    text-align: right;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    border-color:rgb(76, 123, 164);
+    background-color: rgb(244, 247, 252);
+    outline:none ;
+    font-size: 4;
+  }
+  #named:valid{
+    color:rgb(76, 123, 164) ;
+    font-family: "Katibeh", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    text-align: right;
+    
+  
+  }
+  #taman{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    width: 440PX;
+     justify-content: right;
+  }
+  #year{
+    margin-top: 30px;
+    margin-right: 10px;
+   border-radius: 5px;
+   border: solid 1.7px;
+    border-color:rgb(76, 123, 164);
+    background-color:  rgb(244, 247, 252);
+    color:rgb(76, 123, 164) ;
+
+
+  }
+  #year:focus{
+    border-radius: 5px;
+    border: solid 1.7px;
+     border-color:rgb(76, 123, 164);
+     background-color:  rgb(244, 247, 252);
+     color:rgb(76, 123, 164) ;
+ 
+  }
+  #yearlbl{
+    margin-top: 20px;
+    margin-right: 20px;
+    color:rgb(76, 123, 164) ;
+    font-family: "Katibeh", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: x-large;
+
+  }
+  #ragaz2{
+    margin-right: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    width: 440PX;
+     justify-content: center;
+  
+     margin-top: 20px;
+     color:rgb(76, 123, 164) ;
+     font-family: "Katibeh", serif;
+     font-weight: 400;
+     font-style: normal;
+     font-size: 28px;
+     text-align: right;
+  }
+  #ragaz{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    width: 440PX;
+     justify-content:space-between;
+    
+  }
+  #ner{
+    margin-left: 130px;
+    color:rgb(76, 123, 164) ;
+    font-family: "Katibeh", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+    text-align: right;
+    margin-top:7px ;
+  }
+  #female{
+    margin-right:139px ;
+    color:rgb(76, 123, 164) ;
+     font-family: "Katibeh", serif;
+     font-weight: 400;
+     font-style: normal;
+     font-size: 23px;
+     text-align: right;
+     margin-top:7px ;
+  }
+  #neer{
+    border-color:rgb(76, 123, 164) ;
+    color: rgb(76, 123, 164);
+    background-color: rgb(76, 123, 164);
+    font-size: 140px;
+  }
+   
+.dateInput {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  height: 2.5em;
+  width: 12.5em;
+  border-radius: 2.5em;
+  border: 2px solid rgb(76, 123, 164);
+  background-color: rgb(244, 247, 252);
+ 
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(76, 123, 164);
+  text-align: center;
+  font-size: 14px;
+  
+  transition: outline-offset 0.5s ease, outline-color 0.5s ease,
+    height 0.5s ease, width 0.5s ease, filter 0.5s ease;
+    
+}
+
+.dateInput:focus {
+ border-color: rgb(76, 123, 164);
+  
+  outline-color:  rgb(76, 123, 164); 
+}
+
+
+.dateInput::placeholder {
+  padding-left: 0.8em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transform: translateX(-6px);
+  transition: transform 0.5s ease;
+  color: rgb(76, 123, 164);
+}
+
+.dateInput:focus::placeholder {
+  transform: translateX(-85px);
+  transition: 0.5s;
+}
+.butn {
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: x-large;
+  color:rgb(244, 247, 252);
+  font-family: "Katibeh", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: rgb(76, 123, 164);
+  border: none;
+  border-radius: 5px;
+  margin-top: 19px;
+}
+.butn:hover{
+  background-color:rgb(244, 247, 252) ;
+  color: rgb(76, 123, 164);
+  transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+  .header {
+      flex-direction: column; /* Stack elements */
+      height: auto;
+      padding: 10px;
+  }
+
+  #ul {
+      flex-direction: column; /* Stack menu items */
+  }
+
+  .li {
+      margin-right: 0; /* Remove horizontal spacing */
+      margin-bottom: 8px; /* Add vertical spacing */
+  }
+
+  .xosh h4 {
+      font-size: 32px; /* Reduce font size */
+      text-align: center;
+  }
+
+  .xosh p {
+      font-size: 24px; /* Reduce font size */
+      text-align: center;
+  }
+
+  .card {
+      width: 90%; /* Make cards responsive */
+      margin-right: 0;
+      margin-bottom: 20px;
+  }
+
+  .btn {
+      min-width: 100px; /* Reduce button size */
+      font-size: 14px;
+  }
+
+  #form {
+      width: 90%; /* Adjust form width */
+  }
+
+  #named {
+      width: 90%; /* Adjust input field width */
+  }
+
+  .dateInput {
+      width: 80%; /* Adjust date input width */
+  }
+
+  .butn {
+      font-size: medium; /* Adjust button font size */
+  }
+}
